@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-info">
+    <div class="row">
+        <div class="col-md-6 offset-md-3" style="background-color: #fff;margin-top: 25px;padding:20px;"><h3>{{viewTitle}}</h3>
+
+<form action="/crud" method="POST" autocomplete="off" >
+    <input type="hidden" name="_id" value="{{product._id}}">
+    <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" class="form-control" name="ProductName" placeholder="Product Name" value="{{product.name}}">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Price</label>
+            <input type="text" class="form-control" name="Price" placeholder="Price of the product" value="{{product.price}}">
+        </div>
+    </div>
+     <div class="form-group col-md-6">
+         <input type="file" name='productImage' placeholder="Select file"/>
+    <br/>
+    <button>Upload</button>
+        </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/product"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
+
+</div> 
+</div>
+
+</body>
+
+</html>

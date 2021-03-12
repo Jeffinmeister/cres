@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+</head>
+
+<body class="bg-info">
+    <div class="row">
+      <div class="col-md-2 offset-md-3"></div>
+<main class="form-signin">
+  <form action="/register" method="POST">
+    <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <label for="inputEmail" class="visually-hidden">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>
+    <label for="inputPassword" class="visually-hidden">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password"required>
+    <div class="checkbox mb-3">
+    <label for="inputPassword1" class="visually-hidden">Confirm Password</label>
+    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" name="confirmpassword" required>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+    
+  </form>
+</main>
+
+
+    </div>
+  </body>
+</html>
